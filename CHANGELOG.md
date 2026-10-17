@@ -9,6 +9,14 @@ Earlier changes are recorded in the workspace [`CHANGELOG.md`](../CHANGELOG.md).
 
 ## [Unreleased]
 
+### Changed
+
+- **Sibling requirements follow the security-hardening release train (breaking).**
+  `armature-log` 0.2 → 0.3. Those releases change public APIs and secure-by-default behaviour
+  (see each crate's CHANGELOG); this crate's minor moves with them so a
+  downstream build can't mix it with the previous sibling releases. No code
+  changes in this crate.
+
 ### Fixed
 
 - The pool settings the default `deadpool` backend ignores are documented on the fields themselves and warned about at construction, rather than noted only in a code comment.
